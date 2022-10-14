@@ -17,7 +17,7 @@ export class App extends Component{
     bigImageUrl:''
   }
 
-   async componentDidUpdate(prevProps, prevState) {
+   async componentDidUpdate() {
     
      if (this.state.isLoading) {
       const images=await fetchImages(this.state.queue,this.state.quantity)
